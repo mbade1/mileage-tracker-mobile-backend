@@ -6,7 +6,16 @@ class ShoesController < ApplicationController
 
     def show 
         shoe = @user.shoes.find_by(id: params[:id])
-        render json: shoe
+        if shoe 
+            render json: shoe
+        else
+            render json: {message: 'Shoe not found.'}
+        end
+    end
+
+    def destroy
+        shoe = @user.shoes.find_by(id: params[:id])
+        shoe.destroy
     end
 
     private
