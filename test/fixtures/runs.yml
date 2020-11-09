@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shoe_id: 1
+  user_id: 1
+  date_of_run: 2020-11-06
+  distance_of_run: 9.99
+  image_of_run: MyString
+
+two:
+  shoe_id: 1
+  user_id: 1
+  date_of_run: 2020-11-06
+  distance_of_run: 9.99
+  image_of_run: MyString

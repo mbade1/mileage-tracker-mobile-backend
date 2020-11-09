@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  run_id: 1
+  total_miles: 1
+  name: MyString
+  mileage: 9.99
+  date_of_purchase: 2020-11-06
+
+two:
+  user_id: 1
+  run_id: 1
+  total_miles: 1
+  name: MyString
+  mileage: 9.99
+  date_of_purchase: 2020-11-06
