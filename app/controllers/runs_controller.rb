@@ -2,8 +2,12 @@ class RunsController < ApplicationController
     before_action :set_user
 
     def index 
-        runs = Run.all
-        render json: @user.runs
+        runs = @user.runs
+        if runs.length > 0
+            render json: runs
+        else
+            render json: {message: 'No runs logged.'}
+        end
     end
 
     def show 
