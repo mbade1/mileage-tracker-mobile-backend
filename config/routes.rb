@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :shoes, only: [:index]
+  post '/login' => 'users#login'
+
 
   resources :users do 
     resources :runs

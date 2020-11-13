@@ -3,6 +3,7 @@ class RunsController < ApplicationController
 
     def index 
         runs = @user.runs
+        binding.pry
         if runs.length > 0
             render json: runs
         else
@@ -27,6 +28,7 @@ class RunsController < ApplicationController
     private
 
     def set_user
+        binding.pry
         @user = User.find_by(id: params[:user_id])
     end
 end
