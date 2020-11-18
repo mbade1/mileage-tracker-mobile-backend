@@ -13,7 +13,6 @@ class UsersController < ApplicationController
         user = User.new
         user.username = params[:username]
         user.password = params[:password]
-        binding.pry
         if user.save
             render json: user
           else
@@ -23,6 +22,7 @@ class UsersController < ApplicationController
 
     def login 
         user = User.find_by(username: params[:username])
+        binding.pry
         if (user && user.authenticate(params[:password]))
           render json: user
         else
